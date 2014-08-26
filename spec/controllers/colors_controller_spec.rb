@@ -25,11 +25,11 @@ RSpec.describe ColorsController, :type => :controller do
       delete :pop
     end # method perform_action
 
-    it 'returns a 403 Forbidden response' do
+    it 'redirects to root' do
       perform_action
 
-      expect(response.status).to be == 403
-      expect(response.body).to be_blank
+      expect(response.status).to be == 302
+      expect(response).to redirect_to root_path
     end # it
 
     describe 'as an XHR request' do

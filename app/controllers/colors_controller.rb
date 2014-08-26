@@ -8,7 +8,7 @@ class ColorsController < ApplicationController
 
   # DELETE /pop
   def pop
-    head 403 and return unless request.xhr?
+    redirect_to root_path and return unless request.xhr?
 
     head 404 and return if (color = Color.last).blank?
 

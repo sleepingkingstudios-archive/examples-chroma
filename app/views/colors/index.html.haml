@@ -1,4 +1,5 @@
 - # app/views/colors/index.html.haml
 
-%h1 Colors#index
-%p  Find me at app/views/colors/index.html.haml
+= form_tag '/pop', :method => :delete, :id => 'pop_form' do |form|
+  = submit_tag 'Start'
+  = button_tag 'Cancel'
