@@ -2,6 +2,6 @@
 
 = form_tag '/pop', :method => :delete, :id => 'pop_form' do |form|
   %p
-    = submit_tag 'Start'
-    = button_tag 'Cancel'
+    = submit_tag 'Start',  :id => 'start_button'
+    = button_tag 'Cancel', :id => 'cancel_button'
     = link_to 'About This Page', about_path

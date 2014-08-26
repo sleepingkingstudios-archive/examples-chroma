@@ -5,8 +5,8 @@ console.log('Loading app/assets/javascripts/colors.js...');
 $(document).ready(function() {
   $body   = $('body');
   $form   = $('#pop_form');
-  $cancel = $form.children('button');
-  $submit = $form.children('input[type="submit"]');
+  $cancel = $('#cancel_button');
+  $submit = $('#start_button');
 
   intervalId = null;
 
