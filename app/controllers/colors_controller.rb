@@ -8,7 +8,7 @@ class ColorsController < ApplicationController
 
   # GET /about
   def about
-    
+    @colors_count = Color.count
   end # action about
 
   # DELETE /pop

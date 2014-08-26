@@ -30,6 +30,8 @@ RSpec.describe ColorsController, :type => :controller do
 
       expect(response.status).to be == 200
       expect(response).to render_template(:about)
+
+      expect(assigns(:colors_count)).to be_a Integer
     end # it
   end # describe
 
