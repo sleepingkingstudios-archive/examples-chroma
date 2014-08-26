@@ -6,6 +6,11 @@ class ColorsController < ApplicationController
 
   end # action index
 
+  # GET /about
+  def about
+    
+  end # action about
+
   # DELETE /pop
   def pop
     redirect_to root_path and return unless request.xhr?

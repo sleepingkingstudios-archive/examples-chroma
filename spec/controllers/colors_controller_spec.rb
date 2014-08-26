@@ -20,6 +20,19 @@ RSpec.describe ColorsController, :type => :controller do
     end # it
   end # describe
 
+  describe '#about' do
+    def perform_action
+      get :about
+    end # method perform_action
+
+    it 'renders the about template' do
+      perform_action
+
+      expect(response.status).to be == 200
+      expect(response).to render_template(:about)
+    end # it
+  end # describe
+
   describe '#pop' do
     def perform_action
       delete :pop

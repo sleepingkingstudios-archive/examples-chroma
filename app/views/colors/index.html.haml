@@ -1,5 +1,7 @@
 - # app/views/colors/index.html.haml
 
 = form_tag '/pop', :method => :delete, :id => 'pop_form' do |form|
-  = submit_tag 'Start'
-  = button_tag 'Cancel'
+  %p
+    = submit_tag 'Start'
+    = button_tag 'Cancel'
+    = link_to 'About This Page', about_path

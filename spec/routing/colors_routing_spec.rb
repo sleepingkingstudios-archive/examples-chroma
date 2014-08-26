@@ -17,6 +17,18 @@ RSpec.describe 'routing for Colors', :type => :routing do
     end # it
   end # describe
 
+  describe 'GET /about' do
+    let(:path)   { '/about' }
+    let(:action) { 'about' }
+
+    it 'routes to ColorsController#about' do
+      expect(:get => path).to route_to({
+        :controller => controller,
+        :action     => action
+      }) # end expect
+    end # it
+  end # describe
+
   describe 'DELETE /pop' do
     let(:path)   { '/pop' }
     let(:action) { 'pop' }
