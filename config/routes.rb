@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  get 'about'  => 'colors#about'
+  delete 'pop' => 'colors#pop'
+
+  root 'colors#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

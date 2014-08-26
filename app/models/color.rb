@@ -15,4 +15,10 @@ class Color
       :only_integer             => true,
       :unless                   => ->(record) { record.red.blank? }
     } # end numericality
+
+  ### Instance Methods ###
+
+  def as_json options = {}
+    [red, green, blue]
+  end # method to_json
 end # model
