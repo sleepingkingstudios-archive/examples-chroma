@@ -1,4 +1,4 @@
 #!/bin/bash
 
 cd ${OPENSHIFT_REPO_DIR}
-RAILS_ENV=production rake colors:generate_colors
+GEM_HOME=${OPENSHIFT_REPO_DIR}/vendor/bundle/ruby RAILS_ENV=production bundle exec rake colors:generate_colors
